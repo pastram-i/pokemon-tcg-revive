@@ -1,0 +1,17 @@
+Add Database
+Add API
+Add FE
+
+Player:
+Add Get/POST to DB
+
+Card Search:
+Add `.all()`'s to filter dicts, to be used as options to choose from
+
+Abilities:
+Add GET/POST to DB
+ - Ideally each ability would be a DB row, with values to pass to board/battle functions
+Index and go through all abilities...........
+
+Mechanics:
+Add all board functions
