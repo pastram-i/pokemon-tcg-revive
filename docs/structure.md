@@ -14,3 +14,5 @@
  - main.py : Run's api. Files to be added for making db calls.
 
 # _frontend - Holds JS, CSS, HTML (Future)
+
+# data - All unique card attributes
