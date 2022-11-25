@@ -24,7 +24,7 @@ class Player:
         expected = 1/(1+10**((self.elo-opponent.elo)/400))
         self.elo+=K(score - expected)
 
-class Deck:
+class Deck(Player):
     def __init__(self, deck_name, cards, favorite=False, active=False):
         self.deck_name = deck_name
         self.cards = cards
