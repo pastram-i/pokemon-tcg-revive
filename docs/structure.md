@@ -1,18 +1,19 @@
-# _main_game
-## app
- - main.py : Run's main application. May not be needed once FE exists.
-### helpers
- - battle.py : Holds steps/phases taken in a match.
- - board.py : Hold's current board object for a match.
- - mechanics.py : Helper functions for ability actions.
-## database
- - abilities.py : Holds ability model, to be used for/with database
- - card_search.py : Uses pokemontcg.io api calls
- - player.py : Holds player object and details (Decks!)
+# _api - Provides calls from FE to DB
+ - main.py - Main API code (fastapi)
 
-# _api
- - main.py : Run's api. Files to be added for making db calls.
+# _database - Provides database instance
+ - card_search.py - makes pokemontcg.io api call, syncs to db
 
-# _frontend - Holds JS, CSS, HTML (Future)
+# _frontend - Provides frontend web application
 
-# data - All unique card attributes
+# _main_game - Provides main game code
+## app - Main game
+ - main.py - Run game code/start server
+ - battle.py - Battle processes/steps
+ - board.py - Board objects for current battle
+### helpers - Functions for gameplay
+ - abilities.py - Functions for cards to use during battles
+ - mechanics.py - Status effects and processes
+## db - API calls to DB
+ - abilities.py - Calls abilities table
+ - player.py - Calls player table
